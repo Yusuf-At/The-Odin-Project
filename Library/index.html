@@ -11,9 +11,55 @@
 <body>
     <div class="header">
         <h1>My Library</h1>
+        <dialog id="input-dialog">
+            <form action="" class="input-book">
+                <div class="book-data">
+                    <label for="author">Author</label>
+                    <input type="text" id="author">
+                </div>
+                <div class="book-data">
+                    <label for="title">Title</label>
+                    <input type="text" id="title">
+                </div>
+                <div class="book-data">
+                    <label for="pages">Number of Pages</label>
+                    <input type="text" id="pages">
+                </div>
+                <div class="book-data">
+                    <label for="status">
+                        Status:
+                        <select name="status" id="status">
+                            <option >Read</option>
+                            <option >Not Read</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit">Submit</button>
+                <button>Cancel</button>
+            </form>
+
+        </dialog>  
+        <button id="showdialog">Add Book</button>
     </div>
     <div class="main">
-
+        <div class="card-container">
+            <div class="card 0">
+                <p>author</p>
+                <p>title</p>
+                <p>number of pages</p>
+                <p>status</p>
+                <button>Read</button>
+                <button>Remove</button>
+            </div>
+            <div class="card 1">
+                <p>author</p>
+                <p>title</p>
+                <p>number of pages</p>
+                <p>status</p>
+                <button>Not Read</button>
+                <button>Remove</button>
+            </div>
+        </div>
     </div>
 </body>
 </html>
