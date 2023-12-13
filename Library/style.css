@@ -38,15 +38,29 @@ button {
     width: auto;
 }
 
+button {
+  border: 2px solid #333;
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  width: auto;
+}
+
+.remove-button {
+  border: 2px solid #333;
+  background-color: rgb(255, 0, 0);
+  border-radius: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  width: auto;
+}
+
 ::backdrop {
     background-image: linear-gradient(
       45deg,
-      magenta,
-      rebeccapurple,
-      dodgerblue,
-      green
+      antiquewhite,
+      darkslategrey
     );
-    opacity: 0.75;
+    opacity: 0.8;
   }
 
 form {
@@ -65,7 +79,6 @@ form {
 }
 
 .main {
-    border: 2px solid blue;
     display: flex;
     justify-content: center;
 }
@@ -73,8 +86,8 @@ form {
 .card-container {
     padding: 2rem;
     background-color: darkslategrey;
-    border-radius: 12px;
-    border: 1px solid lime;
+    border-radius: 3rem;
+    border: 2px solid black;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -85,10 +98,11 @@ form {
 .card {
     background-color: antiquewhite;
     border-radius: 1rem;
-    border: 1px solid whitesmoke;
+    border: 1px solid rgb(151, 54, 54);
     width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 14px;
+    padding: 4px;
 }
